@@ -1,6 +1,6 @@
 import './App.css';
 
-import { Stack } from '@mui/material';
+import { Link, Stack } from '@mui/material';
 
 import { MuiTypography } from './components/MuiTypography';
 import { MuiButton } from './components/MuiButton';
@@ -16,6 +16,7 @@ import { MuiCard } from './components/MuiCard';
 import { MuiAccordion } from './components/MuiAccordion';
 import { MuiImageList } from './components/MuiImageList';
 import { MuiNavbar } from './components/MuiNavbar';
+import { MuiLink } from './components/MuiLink';
 
 function App() {
   return (
@@ -62,6 +63,9 @@ function App() {
 
         {/* Image List */}
         <MuiImageList />
+
+        {/* Link Component */}
+        <MuiLink />
       </Stack>
     </div>
   );
