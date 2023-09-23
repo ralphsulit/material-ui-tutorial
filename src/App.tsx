@@ -1,6 +1,6 @@
 import './App.css';
 
-import { Link, Stack } from '@mui/material';
+import { Stack } from '@mui/material';
 
 import { MuiTypography } from './components/MuiTypography';
 import { MuiButton } from './components/MuiButton';
@@ -17,6 +17,7 @@ import { MuiAccordion } from './components/MuiAccordion';
 import { MuiImageList } from './components/MuiImageList';
 import { MuiNavbar } from './components/MuiNavbar';
 import { MuiLink } from './components/MuiLink';
+import { MuiBreadcrumbs } from './components/MuiBreadCrumbs';
 
 function App() {
   return (
@@ -66,6 +67,9 @@ function App() {
 
         {/* Link Component */}
         <MuiLink />
+
+        {/* Breadcrumb Component */}
+        <MuiBreadcrumbs />
       </Stack>
     </div>
   );
