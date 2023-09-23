@@ -8,7 +8,7 @@ export const MuiTextField = () => {
   const [value, setValue] = useState('');
 
   return (
-    <Stack spacing={4} mt={2}>
+    <Stack spacing={4} my={2}>
       <Stack direction='row' spacing={2}>
         <TextField label='Username' variant='outlined'/>
         <TextField label='Username' variant='filled'/>
