@@ -18,12 +18,14 @@ import { MuiImageList } from './components/MuiImageList';
 import { MuiNavbar } from './components/MuiNavbar';
 import { MuiLink } from './components/MuiLink';
 import { MuiBreadcrumbs } from './components/MuiBreadCrumbs';
+import { MuiDrawer } from './components/MuiDrawer';
 
 function App() {
   return (
     <div className="App">
       {/* Navbar Component */}
       <MuiNavbar />
+      <MuiDrawer />
 
       <Stack p={8}>
         {/* Typography */}
