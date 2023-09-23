@@ -20,6 +20,7 @@ import { MuiLink } from './components/MuiLink';
 import { MuiBreadcrumbs } from './components/MuiBreadCrumbs';
 import { MuiDrawer } from './components/MuiDrawer';
 import { MuiSpeedDial } from './components/MuiSpeedDial';
+import { MuiBottomNavigation } from './components/MuiBottomNavigation';
 
 function App() {
   return (
@@ -76,6 +77,9 @@ function App() {
 
         {/* SpeedDial Component */}
         <MuiSpeedDial />
+
+        {/* Bottom Navigation */}
+        <MuiBottomNavigation />
       </Stack>
     </div>
   );
