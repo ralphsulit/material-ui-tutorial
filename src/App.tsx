@@ -12,6 +12,7 @@ import { MuiAutoComplete } from './components/MuiAutoComplete';
 import { MuiLayout } from './components/MuiLayout';
 import { MuiCard } from './components/MuiCard';
 import { MuiAccordion } from './components/MuiAccordion';
+import { MuiImageList } from './components/MuiImageList';
 
 function App() {
   return (
@@ -51,6 +52,9 @@ function App() {
 
       {/* Accordion Component */}
       <MuiAccordion />
+
+      {/* Image List */}
+      <MuiImageList />
     </div>
   );
 }
