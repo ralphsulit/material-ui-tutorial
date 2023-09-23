@@ -27,7 +27,7 @@ export const MuiButton = () => {
     };
 
 return (
-    <Stack spacing={4}>
+    <Stack spacing={4} mt={5}>
         <Stack spacing={2} direction="row">
             <Button variant="text" href="https://google.com">
                 Text
@@ -62,7 +62,6 @@ return (
         <Stack direction='row'>
             <ButtonGroup 
                 variant='text'
-                orientation='vertical'
                 size='small'
                 color='secondary'
                 aria-label='alignment button group'
@@ -80,7 +79,6 @@ return (
                 onChange={handleFormatChange}
                 size='large'
                 color='info'
-                orientation='vertical'
                 exclusive
             >
                 <ToggleButton value='bold' aria-label='bold'>
