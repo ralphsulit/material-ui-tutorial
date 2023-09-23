@@ -1,5 +1,7 @@
 import './App.css';
 
+import { Stack } from '@mui/material';
+
 import { MuiTypography } from './components/MuiTypography';
 import { MuiButton } from './components/MuiButton';
 import { MuiTextField } from './components/MuiTextField';
@@ -13,48 +15,54 @@ import { MuiLayout } from './components/MuiLayout';
 import { MuiCard } from './components/MuiCard';
 import { MuiAccordion } from './components/MuiAccordion';
 import { MuiImageList } from './components/MuiImageList';
+import { MuiNavbar } from './components/MuiNavbar';
 
 function App() {
   return (
     <div className="App">
-      {/* Typography */}
-      <MuiTypography />
+      {/* Navbar Component */}
+      <MuiNavbar />
 
-      {/* Buttons */}
-      <MuiButton />
+      <Stack p={8}>
+        {/* Typography */}
+        <MuiTypography />
 
-      {/* Textfield */}
-      <MuiTextField />
+        {/* Buttons */}
+        <MuiButton />
 
-      {/* Select */}
-      <MuiSelect />
+        {/* Textfield */}
+        <MuiTextField />
 
-      {/* Radio Button */}
-      <MuiRadioButton />
+        {/* Select */}
+        <MuiSelect />
 
-      {/* Checkbox */}
-      <MuiCheckbox />
+        {/* Radio Button */}
+        <MuiRadioButton />
 
-      {/* Switch */}
-      <MuiSwitch />
+        {/* Checkbox */}
+        <MuiCheckbox />
 
-      {/* Rating */}
-      <MuiRating />
+        {/* Switch */}
+        <MuiSwitch />
 
-      {/* Autocomplete */}
-      <MuiAutoComplete />
+        {/* Rating */}
+        <MuiRating />
 
-      {/* Box Component */}
-      <MuiLayout />
+        {/* Autocomplete */}
+        <MuiAutoComplete />
 
-      {/* Card Component */}
-      <MuiCard />
+        {/* Box Component */}
+        <MuiLayout />
 
-      {/* Accordion Component */}
-      <MuiAccordion />
+        {/* Card Component */}
+        <MuiCard />
 
-      {/* Image List */}
-      <MuiImageList />
+        {/* Accordion Component */}
+        <MuiAccordion />
+
+        {/* Image List */}
+        <MuiImageList />
+      </Stack>
     </div>
   );
 }
