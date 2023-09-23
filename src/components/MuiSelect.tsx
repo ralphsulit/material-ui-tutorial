@@ -1,5 +1,5 @@
 import { Box, TextField, MenuItem } from '@mui/material';
-import { validateHeaderValue } from 'http';
+
 
 import { useState } from 'react';
 
@@ -29,7 +29,6 @@ export const MuiSelect = () => {
           size='small'
           color="secondary"
           helperText='Select your Country'
-          error
         >
           <MenuItem value='PH'>Philippines</MenuItem>
           <MenuItem value='JP'>Japan</MenuItem>
