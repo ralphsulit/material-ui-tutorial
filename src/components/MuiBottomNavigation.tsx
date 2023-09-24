@@ -41,8 +41,8 @@ export const MuiBottomNavigation = () => {
         onChange={handleChange}
         showLabels
       >
-        <BottomNavigationAction label="Home" icon={<HomeIcon />} />
-        <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
+        <BottomNavigationAction label="Home" icon={<HomeIcon />}/>
+        <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} sx={{color: '#d50000'}} />
         <BottomNavigationAction label="Profile" icon={<PersonIcon />} />
       </BottomNavigation>
     </Paper>

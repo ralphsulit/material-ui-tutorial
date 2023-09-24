@@ -21,6 +21,7 @@ import { MuiBreadcrumbs } from './components/MuiBreadCrumbs';
 import { MuiDrawer } from './components/MuiDrawer';
 import { MuiSpeedDial } from './components/MuiSpeedDial';
 import { MuiBottomNavigation } from './components/MuiBottomNavigation';
+import { MuiAvatar } from './components/MuiAvatar';
 
 function App() {
   return (
@@ -80,6 +81,10 @@ function App() {
 
         {/* Bottom Navigation */}
         <MuiBottomNavigation />
+
+        {/* Avatar Component */}
+        <MuiAvatar />
+        
       </Stack>
     </div>
   );
