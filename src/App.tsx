@@ -26,6 +26,7 @@ import { MuiBadge } from './components/MuiBadge';
 import { MuiList } from './components/MuiList';
 import { MuiChip } from './components/MuiChip';
 import { MuiTooltip } from './components/MuiTooltip';
+import { MuiTable } from './components/MuiTable';
 
 function App() {
   return (
@@ -100,6 +101,10 @@ function App() {
 
         {/* Tooltip Component */}
         <MuiTooltip />
+
+        {/* Table Component */}
+        <MuiTable />
+
       </Stack>
     </div>
   );
