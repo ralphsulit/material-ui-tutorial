@@ -1,9 +1,9 @@
 import './App.css';
 
-import { Stack } from '@mui/material';
-
+import { Stack, createTheme, colors, ThemeProvider } from '@mui/material';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns'
 import { LocalizationProvider } from '@mui/x-date-pickers';
+
 
 import { MuiTypography } from './components/MuiTypography';
 import { MuiButton } from './components/MuiButton';
@@ -42,120 +42,138 @@ import { MuiTimeline } from './components/MuiTimeline';
 import { MuiMasonry } from './components/MuiMasonry';
 import { MuiResponsiveness } from './components/MuiResponsiveness';
 
+const theme = createTheme({
+  status: {
+    danger: '#e53e3e',
+  },
+  palette: {
+    secondary: {
+      main: colors.orange[500],
+    },
+    neutral: {
+      main: colors.grey[500],
+    }
+  },
+})
+
 function App() {
   return (
-    <div className="App">
-      {/* Navbar Component */}
-      <MuiNavbar />
-      <MuiDrawer />
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        {/* Navbar Component */}
+        <MuiNavbar />
+        <MuiDrawer />
 
 
-      <Stack p={8}>
-        {/* Typography */}
-        <MuiTypography />
+        <Stack p={8}>
+          {/* Typography */}
+          <MuiTypography />
 
-        {/* Buttons */}
-        <MuiButton />
+          {/* Buttons */}
+          <MuiButton />
 
-        {/* Textfield */}
-        <MuiTextField />
+          {/* Textfield */}
+          <MuiTextField />
 
-        {/* Select */}
-        <MuiSelect />
+          {/* Select */}
+          <MuiSelect />
 
-        {/* Radio Button */}
-        <MuiRadioButton />
+          {/* Radio Button */}
+          <MuiRadioButton />
 
-        {/* Checkbox */}
-        <MuiCheckbox />
+          {/* Checkbox */}
+          <MuiCheckbox />
 
-        {/* Switch */}
-        <MuiSwitch />
+          {/* Switch */}
+          <MuiSwitch />
 
-        {/* Rating */}
-        <MuiRating />
+          {/* Rating */}
+          <MuiRating />
 
-        {/* Autocomplete */}
-        <MuiAutoComplete />
+          {/* Autocomplete */}
+          <MuiAutoComplete />
 
-        {/* Box Component */}
-        <MuiLayout />
+          {/* Box Component */}
+          <MuiLayout />
 
-        {/* Card Component */}
-        <MuiCard />
+          {/* Card Component */}
+          <MuiCard />
 
-        {/* Accordion Component */}
-        <MuiAccordion />
+          {/* Accordion Component */}
+          <MuiAccordion />
 
-        {/* Image List */}
-        <MuiImageList />
+          {/* Image List */}
+          <MuiImageList />
 
-        {/* Link Component */}
-        <MuiLink />
+          {/* Link Component */}
+          <MuiLink />
 
-        {/* Breadcrumb Component */}
-        <MuiBreadcrumbs />
+          {/* Breadcrumb Component */}
+          <MuiBreadcrumbs />
 
-        {/* SpeedDial Component */}
-        <MuiSpeedDial />
+          {/* SpeedDial Component */}
+          <MuiSpeedDial />
 
-        {/* Bottom Navigation */}
-        <MuiBottomNavigation />
+          {/* Bottom Navigation */}
+          <MuiBottomNavigation />
 
-        {/* Avatar Component */}
-        <MuiAvatar />
+          {/* Avatar Component */}
+          <MuiAvatar />
 
-        {/* Badge Component */}
-        <MuiBadge />
+          {/* Badge Component */}
+          <MuiBadge />
 
-        {/* List Item Component */}
-        <MuiList />
+          {/* List Item Component */}
+          <MuiList />
 
-        {/* Chip Component */}
-        <MuiChip />
+          {/* Chip Component */}
+          <MuiChip />
 
-        {/* Tooltip Component */}
-        <MuiTooltip />
+          {/* Tooltip Component */}
+          <MuiTooltip />
 
-        {/* Table Component */}
-        <MuiTable />
+          {/* Table Component */}
+          <MuiTable />
 
-        {/* Alert Component */}
-        <MuiAlert />
+          {/* Alert Component */}
+          <MuiAlert />
 
-        {/* Snackbar Component */}
-        <MuiSnackbar />
+          {/* Snackbar Component */}
+          <MuiSnackbar />
 
-        {/* Dialog Component */}
-        <MuiDialog />
+          {/* Dialog Component */}
+          <MuiDialog />
 
-        {/* Progress Component */}
-        <MuiProgress />
+          {/* Progress Component */}
+          <MuiProgress />
 
-        {/* Skeleton Component */}
-        <MuiSkeleton />
+          {/* Skeleton Component */}
+          <MuiSkeleton />
 
-        {/* Loading Button Component */}
-        <MuiLoadingButton />
+          {/* Loading Button Component */}
+          <MuiLoadingButton />
 
-        {/* Date Picker */}
-        <LocalizationProvider dateAdapter={AdapterDateFns}>
-          <MuiPicker />
-        </LocalizationProvider>
+          {/* Date Picker */}
+          <LocalizationProvider dateAdapter={AdapterDateFns}>
+            <MuiPicker />
+          </LocalizationProvider>
 
-        {/* Tab Component */}
-        <MuiTabs />
+          {/* Tab Component */}
+          <MuiTabs />
 
-        {/* Timeline Component */}
-        <MuiTimeline />
+          {/* Timeline Component */}
+          <MuiTimeline />
 
-        {/* Masonry Component */}
-        <MuiMasonry />
+          {/* Masonry Component */}
+          <MuiMasonry />
 
-        {/* Responsiveness */}
-        <MuiResponsiveness />
-      </Stack>
-    </div>
+          {/* Responsiveness */}
+          <MuiResponsiveness />
+
+
+        </Stack>
+      </div>
+    </ThemeProvider>
   );
 }
 
