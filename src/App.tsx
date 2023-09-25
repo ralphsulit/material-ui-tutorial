@@ -37,6 +37,7 @@ import { MuiProgress } from './components/MuiProgress';
 import { MuiSkeleton } from './components/MuiSkeleton';
 import { MuiLoadingButton } from './components/MuiLoadingButton';
 import { MuiPicker } from './components/MuiPicker';
+import { MuiTabs } from './components/MuiTabs';
 
 function App() {
   return (
@@ -47,11 +48,6 @@ function App() {
 
 
       <Stack p={8}>
-        {/* Date Picker */}
-        <LocalizationProvider dateAdapter={AdapterDateFns}>
-          <MuiPicker />
-        </LocalizationProvider>
-
         {/* Typography */}
         <MuiTypography />
 
@@ -138,6 +134,14 @@ function App() {
 
         {/* Loading Button Component */}
         <MuiLoadingButton />
+
+        {/* Date Picker */}
+        <LocalizationProvider dateAdapter={AdapterDateFns}>
+          <MuiPicker />
+        </LocalizationProvider>
+
+        {/* Tab Component */}
+        <MuiTabs />
 
       </Stack>
     </div>
