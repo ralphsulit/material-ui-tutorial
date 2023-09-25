@@ -39,6 +39,7 @@ import { MuiLoadingButton } from './components/MuiLoadingButton';
 import { MuiPicker } from './components/MuiPicker';
 import { MuiTabs } from './components/MuiTabs';
 import { MuiTimeline } from './components/MuiTimeline';
+import { MuiMasonry } from './components/MuiMasonry';
 
 function App() {
   return (
@@ -146,6 +147,9 @@ function App() {
 
         {/* Timeline Component */}
         <MuiTimeline />
+
+        {/* Masonry Component */}
+        <MuiMasonry />
       </Stack>
     </div>
   );
